@@ -1,0 +1,24 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DDC23A;
+    padding: 10px 20px;
+    user-select: none;
+}
+
+.left {
+    flex: 1; /* Ocupa todo el espacio posible */
+    text-align: left;
+    font-weight: bold;
+}
+
+.right {
+    flex: 1; /* Ocupa todo el espacio posible */
+    text-align: right;
+}
+
+a:hover{
+    cursor: pointer;
+    font-weight: 450;
+}
