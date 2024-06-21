@@ -1,10 +1,16 @@
 footer {
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #DDC23A;
     padding: 10px 20px;
     user-select: none;
+    font-size: 1.2rem;
 }
 
 .left {
@@ -21,4 +27,10 @@ footer {
 a:hover{
     cursor: pointer;
     font-weight: 450;
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.5rem;
+    }
 }
