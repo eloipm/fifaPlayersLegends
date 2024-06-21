@@ -5,11 +5,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { throwError } from 'rxjs';
 import { TranslateModule } from '@ngx-translate/core';
 import { provideTranslation } from './config/i18n/translate-loader.config';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ErrorPageComponent
   ],
   imports: [
     CommonModule,
