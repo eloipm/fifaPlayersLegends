@@ -1,2 +1,7 @@
-<p>homeeee works!</p>
-
+<main>
+  <div class="grid-container">
+    <div *ngFor="let item of players">
+      <app-card [playerList]="item"></app-card>
+    </div>
+  </div>
+</main>

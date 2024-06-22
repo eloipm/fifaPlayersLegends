@@ -1,0 +1,23 @@
+@import '../../../../styles.scss';
+
+main {
+  background-color: $papaya;
+  min-height: 100%;
+  padding: 20px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); // Por defecto una columna para mobile
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); // Dos columnas en tablet
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr); // Cuatro columnas en pantallas grandes
+  }
+
+  gap: 20px;
+}

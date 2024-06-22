@@ -1,0 +1,36 @@
+@import '../../../../styles.scss';
+
+nav[aria-label="breadcrumb"] {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+ol.breadcrumb {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    a {
+      text-decoration: none;
+      color: $e-black;
+      transition: color 0.3s;
+
+      &:hover {
+        color:$olive;
+      }
+    }
+
+    &:last-child {
+      a {
+        pointer-events: none;
+        color: #6c757d;
+      }
+    }
+  }
+}

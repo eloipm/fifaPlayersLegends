@@ -1,107 +1,230 @@
-[
-	{
-        "pId": 1,
-        "name": "Juan Román",
-        "lastName": "Riquelme",
-		"pace":"82",
-		"shooting":"89",
-		"passing":"80",
-		"dribbling":"86",
-		"defending":"34",
-		"physical":"74",
-		"skills":"5",
-		"weakFoot":"5",
-		"cardImage":"../images/players/cardRiquelme.webp",
-		"playerImage":"../images/players/playerRiquelme.jpg",
-		"videos":[
-			{"video":"Video 1 Riquelme", "link":"https://www.youtube.com/watch?v=LegII79VtUM"},
-			{"video":"Video 2 Riquelme", "link":"https://www.youtube.com/watch?v=soYkzJVAgBA"},
-			{"video":"Video 3 Riquelme", "link":"https://www.youtube.com/watch?v=_YDGNiWCA04"}
-		],
-		"teams":[
-			{"signingDate":"1996", "transferDate":"2002","clubName":"Boca Juniors" , "clubImage": "../images/clubs/bocaJuniors.png"},
-			{"signingDate":"2002", "transferDate":"2003","clubName":"F.C.Barcelona" , "clubImage": "../images/clubs/fcBarcelona.png"},
-			{"signingDate":"2003", "transferDate":"2007","clubName":"Villarreal C.F." , "clubImage": "../images/clubs/villarreal.png"},
-			{"signingDate":"2007", "transferDate":"2014","clubName":"Boca Juniors" , "clubImage": "../images/clubs/bocaJuniors.png"},
-			{"signingDate":"2014", "transferDate":"2014","clubName":"Argentinos Juniors" , "clubImage": "../images/clubs/argentinosJuniors.png"}
-		]
+{
+  "playersLegends": [
+    {
+      "pId": 1,
+      "name": "Juan Román",
+      "lastName": "Riquelme",
+      "pace": "82",
+      "shooting": "89",
+      "passing": "80",
+      "dribbling": "86",
+      "defending": "34",
+      "physical": "74",
+      "skills": "5",
+      "weakFoot": "5",
+      "cardImage": "assets/images/players/cardRiquelme.webp",
+      "playerImage": "assets/images/players/playerRiquelme.jpg",
+      "videos": [
+        {
+          "video": "Video 1 Riquelme",
+          "link": "https://www.youtube.com/watch?v=LegII79VtUM"
+        },
+        {
+          "video": "Video 2 Riquelme",
+          "link": "https://www.youtube.com/watch?v=soYkzJVAgBA"
+        },
+        {
+          "video": "Video 3 Riquelme",
+          "link": "https://www.youtube.com/watch?v=_YDGNiWCA04"
+        }
+      ],
+      "teams": [
+        {
+          "signingDate": "1996",
+          "transferDate": "2002",
+          "clubName": "Boca Juniors",
+          "clubImage": "assets/images/clubs/bocaJuniors.png"
+        },
+        {
+          "signingDate": "2002",
+          "transferDate": "2003",
+          "clubName": "F.C.Barcelona",
+          "clubImage": "assets/images/clubs/fcBarcelona.png"
+        },
+        {
+          "signingDate": "2003",
+          "transferDate": "2007",
+          "clubName": "Villarreal C.F.",
+          "clubImage": "assets/images/clubs/villarreal.png"
+        },
+        {
+          "signingDate": "2007",
+          "transferDate": "2014",
+          "clubName": "Boca Juniors",
+          "clubImage": "assets/images/clubs/bocaJuniors.png"
+        },
+        {
+          "signingDate": "2014",
+          "transferDate": "2014",
+          "clubName": "Argentinos Juniors",
+          "clubImage": "assets/images/clubs/argentinosJuniors.png"
+        }
+      ]
     },
-	{
-        "pId": 2,
-        "name": "Xavi",
-        "lastName": "Hernández",
-		"pace":"86",
-		"shooting":"82",
-		"passing":"97",
-		"dribbling":"95",
-		"defending":"76",
-		"physical":"76",
-		"skills":"4",
-		"weakFoot":"5",
-		"cardImage":"../images/players/cardXavi.webp",
-		"playerImage":"../images/players/playerXavi.webp",
-		"videos":[
-			{"video":"Video 1 Xavi", "link":"https://www.youtube.com/watch?v=cJAXLb2rc7E"},
-			{"video":"Video 2 Xavi", "link":"https://www.youtube.com/watch?v=lynhAf7kf0E"},
-			{"video":"Video 3 Xavi", "link":"https://www.youtube.com/watch?v=LM5ilneFGJ4"}
-		],
-		"teams":[
-			{"signingDate":"1998", "transferDate":"2015","clubName":"F.C.Barcelona" , "clubImage": "../images/clubs/fcBarcelona.png"}
-		]
+    {
+      "pId": 2,
+      "name": "Xavi",
+      "lastName": "Hernández",
+      "pace": "86",
+      "shooting": "82",
+      "passing": "97",
+      "dribbling": "95",
+      "defending": "76",
+      "physical": "76",
+      "skills": "4",
+      "weakFoot": "5",
+      "cardImage": "assets/images/players/cardXavi.webp",
+      "playerImage": "assets/images/players/playerXavi.webp",
+      "videos": [
+        {
+          "video": "Video 1 Xavi",
+          "link": "https://www.youtube.com/watch?v=cJAXLb2rc7E"
+        },
+        {
+          "video": "Video 2 Xavi",
+          "link": "https://www.youtube.com/watch?v=lynhAf7kf0E"
+        },
+        {
+          "video": "Video 3 Xavi",
+          "link": "https://www.youtube.com/watch?v=LM5ilneFGJ4"
+        }
+      ],
+      "teams": [
+        {
+          "signingDate": "1998",
+          "transferDate": "2015",
+          "clubName": "F.C.Barcelona",
+          "clubImage": "assets/images/clubs/fcBarcelona.png"
+        }
+      ]
     },
-	{
-        "pId": 3,
-        "name": "Johan",
-        "lastName": "Cruyff",
-		"pace":"93",
-		"shooting":"95",
-		"passing":"93",
-		"dribbling":"97",
-		"defending":"50",
-		"physical":"80",
-		"skills":"5",
-		"weakFoot":"5",
-		"cardImage":"../images/players/cardCruyff.webp",
-		"playerImage":"../images/players/playerCruyff.jpg",
-		"videos":[
-			{"video":"Video 1 Johan Cruyff", "link":"https://www.youtube.com/watch?v=jxkr2BX-vIs"},
-			{"video":"Video 1 Johan Cruyff", "link":"https://www.youtube.com/watch?v=Vib2uy5cf7M"},
-			{"video":"Video 1 Johan Cruyff", "link":"https://www.youtube.com/watch?v=Y-BpXEMr6LU"}
-		],
-		"teams":[
-			{"signingDate":"1964", "transferDate":"1973","clubName":"A.F.C. Ajax" , "clubImage": "../images/clubs/ajax.png"},
-			{"signingDate":"1973", "transferDate":"1978","clubName":"F.C.Barcelona" , "clubImage": "../images/clubs/fcBarcelona.png"},
-			{"signingDate":"1979", "transferDate":"1980","clubName":"Washington Diplomats" , "clubImage": "../images/clubs/washingtonDiplomats.png"},
-			{"signingDate":"1981", "transferDate":"1982","clubName":"Levante U.D." , "clubImage": "../images/clubs/levante.png"},
-			{"signingDate":"1982", "transferDate":"1983","clubName":"Washington Diplomats" , "clubImage": "../images/clubs/washingtonDiplomats.png"},
-			{"signingDate":"1983", "transferDate":"1984","clubName":"Feyenoord" , "clubImage": "../images/clubs/feyenoord.png"}
-		]
+    {
+      "pId": 3,
+      "name": "Johan",
+      "lastName": "Cruyff",
+      "pace": "93",
+      "shooting": "95",
+      "passing": "93",
+      "dribbling": "97",
+      "defending": "50",
+      "physical": "80",
+      "skills": "5",
+      "weakFoot": "5",
+      "cardImage": "assets/images/players/cardCruyff.webp",
+      "playerImage": "assets/images/players/playerCruyff.jpg",
+      "videos": [
+        {
+          "video": "Video 1 Johan Cruyff",
+          "link": "https://www.youtube.com/watch?v=jxkr2BX-vIs"
+        },
+        {
+          "video": "Video 1 Johan Cruyff",
+          "link": "https://www.youtube.com/watch?v=Vib2uy5cf7M"
+        },
+        {
+          "video": "Video 1 Johan Cruyff",
+          "link": "https://www.youtube.com/watch?v=Y-BpXEMr6LU"
+        }
+      ],
+      "teams": [
+        {
+          "signingDate": "1964",
+          "transferDate": "1973",
+          "clubName": "A.F.C. Ajax",
+          "clubImage": "assets/images/clubs/ajax.png"
+        },
+        {
+          "signingDate": "1973",
+          "transferDate": "1978",
+          "clubName": "F.C.Barcelona",
+          "clubImage": "assets/images/clubs/fcBarcelona.png"
+        },
+        {
+          "signingDate": "1979",
+          "transferDate": "1980",
+          "clubName": "Washington Diplomats",
+          "clubImage": "assets/images/clubs/washingtonDiplomats.png"
+        },
+        {
+          "signingDate": "1981",
+          "transferDate": "1982",
+          "clubName": "Levante U.D.",
+          "clubImage": "assets/images/clubs/levante.png"
+        },
+        {
+          "signingDate": "1982",
+          "transferDate": "1983",
+          "clubName": "Washington Diplomats",
+          "clubImage": "assets/images/clubs/washingtonDiplomats.png"
+        },
+        {
+          "signingDate": "1983",
+          "transferDate": "1984",
+          "clubName": "Feyenoord",
+          "clubImage": "assets/images/clubs/feyenoord.png"
+        }
+      ]
     },
-	{
-        "pId": 4,
-        "name": "Rivaldo Vítor",
-        "lastName": "Borba",
-		"pace":"97",
-		"shooting":"96",
-		"passing":"94",
-		"dribbling":"98",
-		"defending":"50",
-		"physical":"84",
-		"skills":"5",
-		"weakFoot":"5",
-		"cardImage":"../images/players/cardRivaldo.webp",
-		"playerImage":"../images/players/playerRivaldo.jpg",
-		"videos":[
-			{"video":"Video 1 Rivaldo", "link":"https://www.youtube.com/watch?v=tUasmBc7N_U"},
-			{"video":"Video 1 Rivaldo", "link":"https://www.youtube.com/watch?v=qKZriD_UsOQ"},
-			{"video":"Video 1 Rivaldo", "link":"https://www.youtube.com/watch?v=s8mzwZZFoZ4"}
-		],
-		"teams":[
-			{"signingDate":"1994", "transferDate":"1996","clubName":"Palmeiras" , "clubImage": "../images/clubs/palmeiras.png"},
-			{"signingDate":"1996", "transferDate":"1997","clubName":"Deportivo La coruña" , "clubImage": "../images/clubs/deporLaCoruna.png"},
-			{"signingDate":"1997", "transferDate":"2002","clubName":"F.C.Barcelona" , "clubImage": "../images/clubs/fcBarcelona.png"},
-			{"signingDate":"2002", "transferDate":"2004","clubName":"AC Milan" , "clubImage": "../images/clubs/milan.png"},
-			{"signingDate":"2004", "transferDate":"2007","clubName":"Olympiacos" , "clubImage": "../images/clubs/olympiacos.png"}
-		]
+    {
+      "pId": 4,
+      "name": "Rivaldo Vítor",
+      "lastName": "Borba",
+      "pace": "97",
+      "shooting": "96",
+      "passing": "94",
+      "dribbling": "98",
+      "defending": "50",
+      "physical": "84",
+      "skills": "5",
+      "weakFoot": "5",
+      "cardImage": "assets/images/players/cardRivaldo.webp",
+      "playerImage": "assets/images/players/playerRivaldo.jpg",
+      "videos": [
+        {
+          "video": "Video 1 Rivaldo",
+          "link": "https://www.youtube.com/watch?v=tUasmBc7N_U"
+        },
+        {
+          "video": "Video 1 Rivaldo",
+          "link": "https://www.youtube.com/watch?v=qKZriD_UsOQ"
+        },
+        {
+          "video": "Video 1 Rivaldo",
+          "link": "https://www.youtube.com/watch?v=s8mzwZZFoZ4"
+        }
+      ],
+      "teams": [
+        {
+          "signingDate": "1994",
+          "transferDate": "1996",
+          "clubName": "Palmeiras",
+          "clubImage": "assets/images/clubs/palmeiras.png"
+        },
+        {
+          "signingDate": "1996",
+          "transferDate": "1997",
+          "clubName": "Deportivo La coruña",
+          "clubImage": "assets/images/clubs/deporLaCoruna.png"
+        },
+        {
+          "signingDate": "1997",
+          "transferDate": "2002",
+          "clubName": "F.C.Barcelona",
+          "clubImage": "assets/images/clubs/fcBarcelona.png"
+        },
+        {
+          "signingDate": "2002",
+          "transferDate": "2004",
+          "clubName": "AC Milan",
+          "clubImage": "assets/images/clubs/milan.png"
+        },
+        {
+          "signingDate": "2004",
+          "transferDate": "2007",
+          "clubName": "Olympiacos",
+          "clubImage": "assets/images/clubs/olympiacos.png"
+        }
+      ]
     }
-]
+  ]
+}

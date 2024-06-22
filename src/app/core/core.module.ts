@@ -2,11 +2,10 @@ import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { throwError } from 'rxjs';
 import { TranslateModule } from '@ngx-translate/core';
 import { provideTranslation } from './config/i18n/translate-loader.config';
 import { ErrorPageComponent } from './error-page/error-page.component';
-import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({

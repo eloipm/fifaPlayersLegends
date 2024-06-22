@@ -1,7 +1,6 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
-// import { BreadcrumbModule } from 'primeng/breadcrumb';
 
 interface Breadcrumb {
   label: string;
@@ -45,11 +44,9 @@ export class BreadcrumbComponent {
         url: url
       });
 
-      // Llamada recursiva para cada hijo, pero no retorna hasta procesar todos los hijos
+
       this.createBreadcrumbs(child, url, breadcrumbs);
     }
-
-    console.log(breadcrumbs);
 
     return breadcrumbs;
   }

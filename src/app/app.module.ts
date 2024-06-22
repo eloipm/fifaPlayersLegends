@@ -12,6 +12,7 @@ import { HomeModule } from './modules/home/home.module';
   declarations: [
     AppComponent,
 
+
   ],
   imports: [
     BrowserModule,
