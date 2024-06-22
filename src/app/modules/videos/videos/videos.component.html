@@ -1,22 +1,22 @@
 <div class="container">
   <div class="row">
+
     <div class="imageCol">
-      <!-- Imagen -->
       <div class="card">
         <img src="{{ player.playerImage }}" alt="{{player.name}} {{player.lastName}}">
       </div>
     </div>
-    <div class="videosCol">
 
-    <div *ngIf="player?.videos" class="dataCol">
-      <div *ngFor="let video of player.videos" class=" dataCol video-card">
-        <iframe [src]="getSafeVideoUrl(video.link)" frameborder="0" allowfullscreen></iframe>
+    <div class="videosCol">
+      <div *ngIf="player?.videos" class="dataCol">
+        <div *ngFor="let video of player.videos" class=" dataCol video-card">
+          <iframe [src]="getSafeVideoUrl(video.link)" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
 
-</div>
-
-<div class="container_btn">
-  <div class="btn" (click)="goToTeams(player!.pId)">Teams</div>
+  <div class="container_btn">
+    <div class="btn" (click)="goToTeams(player!.pId)">Teams</div>
+  </div>
 </div>

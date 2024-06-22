@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="imageCol">
+      <div class="card">
+        <img src="{{ player.playerImage }}" alt="{{player.name}} {{player.lastName}}">
+      </div>
+    </div>
+    <div class="teamsCol">
+
+      <div *ngIf="player?.teams" class="dataCol">
+        <div *ngFor="let team of player.teams" class=" dataCol team-card">
+          <p>{{player.teams[0]}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
