@@ -6,10 +6,9 @@ import { PlayersComponent } from './components/players/players.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
 
-
 @NgModule({
   declarations: [
-    PlayersComponent
+    PlayersComponent,
   ],
   imports: [
     CommonModule,
