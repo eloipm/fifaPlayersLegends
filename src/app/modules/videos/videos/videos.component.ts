@@ -22,7 +22,6 @@ export class VideosComponent implements OnInit {
     const id = +this.routeActive.snapshot.paramMap.get('id')!;
     this.playerService.getPlayerById(id).subscribe(player => {
       this.player = player;
-      console.log(this.player);
 
     });
 
@@ -37,7 +36,5 @@ export class VideosComponent implements OnInit {
   goToTeams(id: number): void {
     this.route.navigate(['teams'], { relativeTo: this.routeActive.parent });
   }
-  // goToTeams(id: number): void {
-  //   this.router.navigate(['/home/players/', id, 'videos'])
-  // }
+
 }
