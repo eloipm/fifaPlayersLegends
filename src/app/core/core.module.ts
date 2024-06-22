@@ -5,23 +5,30 @@ import { FooterComponent } from './components/footer/footer.component';
 import { throwError } from 'rxjs';
 import { TranslateModule } from '@ngx-translate/core';
 import { provideTranslation } from './config/i18n/translate-loader.config';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ErrorPageComponent,
+    BreadcrumbComponent
   ],
   imports: [
     CommonModule,
+    RouterModule,
     TranslateModule.forRoot(provideTranslation())
   ],
   exports:[
     HeaderComponent,
     FooterComponent,
-    TranslateModule
+    TranslateModule,
+    BreadcrumbComponent
   ]
 })
-export class CoreModule { 
+export class CoreModule {
    constructor(@Optional() @SkipSelf() parentModule:CoreModule){
     if(parentModule){
       throw new Error("CoreModule is already loaded");

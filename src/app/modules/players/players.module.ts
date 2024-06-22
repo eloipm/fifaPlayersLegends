@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { PlayersRoutingModule } from './players-routing.module';
+import { PlayersComponent } from './components/players/players.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    PlayersComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    PlayersRoutingModule
   ]
 })
 export class PlayersModule { }
