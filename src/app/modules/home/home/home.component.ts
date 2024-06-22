@@ -28,4 +28,8 @@ export class HomeComponent {
     });
   }
 
+  viewDetails(id: number): void {
+    this.router.navigate(['home/players', id]);
+  }
+
 }

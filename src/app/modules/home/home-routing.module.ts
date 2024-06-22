@@ -20,7 +20,7 @@ const routes: Routes = [
         component: HomeComponent,
       },
       {
-        path: 'players',
+        path: 'players/:id',
         data: {
           breadcrumb: 'Players'
         },

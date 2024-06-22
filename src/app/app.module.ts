@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeModule } from './modules/home/home.module';
+import { TranslateModule } from '@ngx-translate/core';
+import { provideTranslation } from './core/config/i18n/translate-loader.config';
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { HomeModule } from './modules/home/home.module';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    HttpClientModule, HomeModule
+    HttpClientModule, HomeModule,
+    TranslateModule.forRoot(provideTranslation())
   ],
   providers: [],
   bootstrap: [AppComponent]

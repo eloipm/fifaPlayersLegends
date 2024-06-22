@@ -9,7 +9,15 @@ interface Breadcrumb {
 
 @Component({
   selector: 'app-breadcrumb',
-  templateUrl: './breadcrumb.component.html',
+  template: `
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs">
+        <a [routerLink]="breadcrumb.url">{{ breadcrumb.label }}</a>
+      </li>
+    </ol>
+  </nav>
+  `,
   styleUrl: './breadcrumb.component.scss'
 })
 

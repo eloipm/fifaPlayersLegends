@@ -3,11 +3,10 @@ import { IPlayerService } from './player.service.interface';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
 import { IPlayer } from '../models/player.model';
-import { HomeComponent } from '../modules/home/home/home.component';
 
 
 @Injectable({
-  providedIn: HomeComponent
+  providedIn: 'root'
 })
 
 export class PlayerService implements IPlayerService {
@@ -20,8 +19,14 @@ export class PlayerService implements IPlayerService {
   }
 
   getPlayerById(id: number): Observable<IPlayer> {
-    return this.http.get<IPlayer[]>(this.playersUrl).pipe(
-      map(players => players.find(player => player.pId === id)!)
+    return this.http.get<{playersLegends: IPlayer[]}>(this.playersUrl).pipe(
+      map(response => {
+        const player = response.playersLegends.find(player => player.pId === id);
+        if (!player) {
+          throw new Error(`Player with ID ${id} not found`);
+        }
+        return player;
+      })
     );
   }
 
