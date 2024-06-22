@@ -45,14 +45,37 @@ button {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { //responsive tablet
     header {
         height: 4rem;
         padding: 10px;
     }
 
     .logoImg {
+        width: 6rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    .languageFlag {
         width: 3rem;
+
+        &:hover {
+            width: 3.1rem;
+        }
+    }
+}
+
+@media (max-width: 552px) { //responsive mobile
+    header {
+        height: 4rem;
+        padding: 10px;
+    }
+
+    .logoImg {
+        width: 4.5rem;
     }
 
     header h1 {

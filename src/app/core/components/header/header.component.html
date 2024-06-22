@@ -1,9 +1,9 @@
 <header>
     <a href="/"><img class="logoImg" src="../../../../assets/images/darkLogo.png"
             alt="EaFC24-logo"></a>
-
-        <h1><a href="/">FIFA PLAYERS LEGENDS</a></h1>
-
+    
+        <h1><a href="/">{{"titleHeader" | translate}}</a></h1>
+    
     <div *ngFor="let language of languages">
         <button (click)="getLanguage(language.value)">
             <img class="languageFlag" src="{{language.flag}}" alt="{{language.alt}}">
