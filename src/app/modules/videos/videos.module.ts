@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { VideosRoutingModule } from './videos-routing.module';
-import { VideosComponent } from './components/videos/videos.component';
+import { VideosComponent } from './videos/videos.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -11,10 +12,11 @@ import { VideosComponent } from './components/videos/videos.component';
   ],
   imports: [
     CommonModule,
-    VideosRoutingModule
+    VideosRoutingModule,
+    RouterModule
   ],
   exports: [
-    VideosComponent
+
   ]
 })
 export class VideosModule { }
