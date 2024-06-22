@@ -1,0 +1,25 @@
+@import '../../../../styles.scss';
+.card {
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  // margin: 2rem;
+  width: 100%;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .card__image {
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: grayscale(100%);
+    }
+  }
+
+  .card__content {
+    margin-top: 10px;
+  }
+}
