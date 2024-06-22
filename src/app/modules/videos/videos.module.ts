@@ -12,6 +12,9 @@ import { VideosComponent } from './components/videos/videos.component';
   imports: [
     CommonModule,
     VideosRoutingModule
+  ],
+  exports: [
+    VideosComponent
   ]
 })
 export class VideosModule { }
