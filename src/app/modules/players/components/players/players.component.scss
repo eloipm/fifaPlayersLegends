@@ -1,0 +1,68 @@
+@import '../../../../../styles.scss';
+
+.container {
+  .row {
+    display: block;
+
+    .card {
+
+      max-width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 40%;
+        height: auto;
+      }
+    }
+
+    .statistics-grid {
+      margin: 4rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 2rem;
+
+      .statistic {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+    }
+  }
+
+  .container_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .btn{
+    background-color: $old_gold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+  }
+  :hover{
+    background-color: $olive;
+    cursor: pointer;
+  }
+}
+
+  @media (min-width: 768px) {
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .col-md-6 {
+        width: 48%;
+      }
+
+      .statistics-grid {
+        grid-template-columns: repeat(2, 1fr); // Cambia a 2 columnas en pantallas medianas y grandes
+      }
+    }
+  }
+}
+

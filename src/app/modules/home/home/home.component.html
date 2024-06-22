@@ -1,6 +1,6 @@
 <main>
   <div class="grid-container">
-    <div *ngFor="let item of players">
+    <div *ngFor="let item of players" (click)="viewDetails(item.pId)">
       <app-card [playerList]="item"></app-card>
     </div>
   </div>
