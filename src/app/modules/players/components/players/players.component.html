@@ -1,3 +1,5 @@
+
+
 <div class="container">
   <div class="row">
     <div class="dataCol">
@@ -7,58 +9,130 @@
     </div>
     <div class="dataCol">
       <div class="statistics-grid">
-        <div class="statistic">Pace: {{player?.pace}}</div>
-        <div class="statistic">Shooting: {{player?.shooting}}</div>
-        <div class="statistic">Passing: {{player?.passing}}</div>
-        <div class="statistic">Dribbling: {{player?.dribbling}}</div>
-        <div class="statistic">Defending: {{player?.defending}}</div>
-        <div class="statistic">Physical: {{player?.physical}}</div>
+        <div class="arc-container">
+          <div class="arc">
+            <div class="number">{{player?.pace}}</div>
+          </div>
+          <div class="label">PACE</div>
+        </div>
+        <div class="arc-container">
+          <div class="arc">
+            <div class="number">{{player?.shooting}}</div>
+          </div>
+          <div class="label">SHOOTING</div>
+        </div>
+        <div class="arc-container">
+          <div class="arc">
+            <div class="number">{{player?.passing}}</div>
+          </div>
+          <div class="label">PASSING</div>
+        </div>
+        <div class="arc-container">
+          <div class="arc">
+            <div class="number">{{player?.dribbling}}</div>
+          </div>
+          <div class="label">DRIBBLING</div>
+        </div>
+        <div class="arc-container">
+          <div class="arc">
+            <div class="number">{{player?.defending}}</div>
+          </div>
+          <div class="label">DEFENDING</div>
+        </div>
+        <div class="arc-container">
+          <div class="arc">
+            <div class="number">{{player?.physical}}</div>
+          </div>
+          <div class="label">PHYSICAL</div>
+        </div>
         <!-- Add more statistics as needed -->
       </div>
     </div>
   </div>
 
-  <div class="statistics-grid">
-    <!-- <div class="statistic-container">
-      <div class="statistic">Pace</div>
-      <div class="player-stats-half-circle" [style.background-image]="getSemicircleBackground(player!.pace)">
-        <div class="player-stats-half-circle-value">{{ player?.pace }}%</div>
-      </div>
-    </div>
-    <div class="statistic-container">
-      <div class="statistic-label">Shooting</div>
-      <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.shooting)">
-        <div class="player-stats-half-circle-value">{{ player?.shooting }}%</div>
-      </div>
-    </div>
-    <div class="statistic-container">
-      <div class="statistic-label">Passing</div>
-      <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.passing)">
-        <div class="player-stats-half-circle-value">{{ player?.passing }}%</div>
-      </div>
-    </div>
-    <div class="statistic-container">
-      <div class="statistic-label">Dribbling</div>
-      <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.dribbling)">
-        <div class="player-stats-half-circle-value">{{ player?.dribbling }}%</div>
-      </div>
-    </div>
-    <div class="statistic-container">
-      <div class="statistic-label">Defending</div>
-      <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.defending)">
-        <div class="player-stats-half-circle-value">{{ player?.defending }}%</div>
-      </div>
-    </div>
-    <div class="statistic-container">
-      <div class="statistic-label">Physical</div>
-      <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.physical)">
-        <div class="player-stats-half-circle-value">{{ player?.physical }}%</div>
-      </div>
-    </div> -->
-  </div>
-
   <div class="container_btn">
-    <div class="btn" (click)="goToVideos(player!.pId)">videos
+    <div class="btn" (click)="goToVideos(player!.pId)">Videos</div>
+  </div>
+</div>
+<div class="statistics-grid">
+  <!-- <div class="statistic-container">
+    <div class="statistic">Pace</div>
+    <div class="player-stats-half-circle" [style.background-image]="getSemicircleBackground(player!.pace)">
+      <div class="player-stats-half-circle-value">{{ player?.pace }}%</div>
     </div>
   </div>
+  <div class="statistic-container">
+    <div class="statistic-label">Shooting</div>
+    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.shooting)">
+      <div class="player-stats-half-circle-value">{{ player?.shooting }}%</div>
+    </div>
+  </div>
+  <div class="statistic-container">
+    <div class="statistic-label">Passing</div>
+    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.passing)">
+      <div class="player-stats-half-circle-value">{{ player?.passing }}%</div>
+    </div>
+  </div>
+  <div class="statistic-container">
+    <div class="statistic-label">Dribbling</div>
+    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.dribbling)">
+      <div class="player-stats-half-circle-value">{{ player?.dribbling }}%</div>
+    </div>
+  </div>
+  <div class="statistic-container">
+    <div class="statistic-label">Defending</div>
+    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.defending)">
+      <div class="player-stats-half-circle-value">{{ player?.defending }}%</div>
+    </div>
+  </div>
+  <div class="statistic-container">
+    <div class="statistic-label">Physical</div>
+    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.physical)">
+      <div class="player-stats-half-circle-value">{{ player?.physical }}%</div>
+    </div>
+  </div> -->
+</div>
+
+
+
+
+
+
+<div class="statistics-grid">
+  <!-- <div class="statistic-container">
+    <div class="statistic">Pace</div>
+    <div class="player-stats-half-circle" [style.background-image]="getSemicircleBackground(player!.pace)">
+      <div class="player-stats-half-circle-value">{{ player?.pace }}%</div>
+    </div>
+  </div>
+  <div class="statistic-container">
+    <div class="statistic-label">Shooting</div>
+    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.shooting)">
+      <div class="player-stats-half-circle-value">{{ player?.shooting }}%</div>
+    </div>
+  </div>
+  <div class="statistic-container">
+    <div class="statistic-label">Passing</div>
+    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.passing)">
+      <div class="player-stats-half-circle-value">{{ player?.passing }}%</div>
+    </div>
+  </div>
+  <div class="statistic-container">
+    <div class="statistic-label">Dribbling</div>
+    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.dribbling)">
+      <div class="player-stats-half-circle-value">{{ player?.dribbling }}%</div>
+    </div>
+  </div>
+  <div class="statistic-container">
+    <div class="statistic-label">Defending</div>
+    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.defending)">
+      <div class="player-stats-half-circle-value">{{ player?.defending }}%</div>
+    </div>
+  </div>
+  <div class="statistic-container">
+    <div class="statistic-label">Physical</div>
+    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.physical)">
+      <div class="player-stats-half-circle-value">{{ player?.physical }}%</div>
+    </div>
+  </div> -->
 </div>
