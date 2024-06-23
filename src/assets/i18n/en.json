@@ -3,5 +3,11 @@
     "titleHeader":"FIFA PLAYERS LEGENDS",
     "button": "Got to videos",
     "back": "Back to main page",
+    "stat1": "PACE",
+    "stat2": "SHOOTING",
+    "stat3": "PASSING",
+    "stat4": "DRIBBLING",
+    "stat5": "DEFENDING",
+    "stat6": "PHYSICAL",
     "teams": "Teams"
 }

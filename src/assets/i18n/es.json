@@ -3,5 +3,11 @@
     "titleHeader":"JUGADORES LEYENDA DE FIFA",
     "button": "Ir a videos",
     "back": "Volver a la página principal",
+    "stat1": "RITMO",
+    "stat2": "TIRO",
+    "stat3": "PASE",
+    "stat4": "REGATE",
+    "stat5": "DEFENSA",
+    "stat6": "FÍSICO",
     "teams": "Equipos"
 }

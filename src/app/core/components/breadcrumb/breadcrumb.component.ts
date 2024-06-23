@@ -12,6 +12,9 @@ interface Breadcrumb {
   template: `
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
+    <li>
+        <p>🏠</p>
+      </li>
       <li class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs">
         <a [routerLink]="breadcrumb.url">{{ breadcrumb.label }}</a>
       </li>
