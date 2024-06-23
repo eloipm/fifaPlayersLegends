@@ -1,5 +1,14 @@
 @import '../../../../styles.scss';
 
+ main{
+   background-color: $papaya;
+   min-height: 78.2vh;
+   padding: 20px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
 .container {
   background-color: $papaya;
   padding: 1rem;
