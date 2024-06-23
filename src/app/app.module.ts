@@ -9,11 +9,13 @@ import { HomeModule } from './modules/home/home.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { provideTranslation } from './core/config/i18n/translate-loader.config';
 import { VideosModule } from './modules/videos/videos.module';
+import { PlayersComponent } from './modules/players/components/players/players.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    PlayersComponent
   ],
   imports: [
     BrowserModule,

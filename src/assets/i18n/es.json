@@ -1,5 +1,11 @@
 {
     "footer":"Hecho con amor por Eloi y Meli",
     "titleHeader":"JUGADORES LEYENDA DE FIFA",
-    "button": "Ir a videos"
+    "button": "Ir a videos",
+    "stat1": "RITMO",
+    "stat2": "TIRO",
+    "stat3": "PASE",
+    "stat4": "REGATE",
+    "stat5": "DEFENSA",
+    "stat6": "FÍSICO"
 }
