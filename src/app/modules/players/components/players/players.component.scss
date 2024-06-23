@@ -7,26 +7,14 @@
     display: block;
 
     .card {
-
       max-width: 100%;
       height: auto;
       display: flex;
       justify-content: center;
 
-      .card-img {
-        width: 60%;
+      img {
+        width: 50%;
         height: auto;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-
-        &:hover {
-          transform: translateY(-2px);
-          cursor: pointer;
-        }
-
-        &:active {
-          transform: translateY(1px);
-        }
-
       }
     }
 
@@ -86,6 +74,7 @@
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 10vh;
 
     .btn {
       background-color: $old_gold;
@@ -93,26 +82,12 @@
       border-radius: 5px;
       border: none;
       text-align: center;
-      margin: 15px;
+
       &:hover {
         background-color: $olive;
         cursor: pointer;
       }
     }
-  }
-
-  .error {
-    background-color: $papaya;
-    color: #9d3333;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-align: center;
-    height: 70vh;
-    padding-top: 5%;
-  
-    p{
-      padding-bottom: 5%;}
-  
   }
 
   @media (min-width: 768px) {
@@ -131,4 +106,3 @@
     }
   }
 }
-
