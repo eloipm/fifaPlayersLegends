@@ -1,7 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { IPlayer } from '../../../../models/player.model';
 import { ActivatedRoute, Router } from '@angular/router';
-import { PlayerService } from '../../../../services/player.service';
+import { IPlayerService } from '../../../../services/player.service.interface';
 
 @Component({
   selector: 'app-players',
@@ -17,7 +17,7 @@ export class PlayersComponent implements OnInit {
 
   private route = inject(ActivatedRoute);
   private router = inject(Router);
-  private playerService = inject(PlayerService);
+  private playerService = inject(IPlayerService);
 
   ngOnInit(): void {
     const id = +this.route.snapshot.paramMap.get('id')!;

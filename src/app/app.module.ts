@@ -13,6 +13,8 @@ import { PlayersComponent } from './modules/players/components/players/players.c
 import { TeamsComponent } from './modules/teams/teams/teams.component';
 
 import { CardTeamComponent } from './modules/teams/card-team/card-team.component';
+import { IPlayerService } from './services/player.service.interface';
+import { PlayerService } from './services/player.service';
 
 
 @NgModule({
@@ -31,7 +33,7 @@ import { CardTeamComponent } from './modules/teams/card-team/card-team.component
     VideosModule,
     TranslateModule.forRoot(provideTranslation())
   ],
-  providers: [],
+  providers: [{provide: IPlayerService, useClass: PlayerService}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

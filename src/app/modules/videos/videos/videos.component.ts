@@ -1,8 +1,8 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IPlayer } from '../../../models/player.model';
-import { PlayerService } from '../../../services/player.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { IPlayerService } from '../../../services/player.service.interface';
 
 @Component({
   selector: 'app-videos',
@@ -15,7 +15,7 @@ export class VideosComponent implements OnInit {
 
   private route = inject(Router);
   private routeActive = inject(ActivatedRoute);
-  private playerService = inject(PlayerService);
+  private playerService = inject(IPlayerService);
   private sanitizer = inject(DomSanitizer);
 
   ngOnInit() {

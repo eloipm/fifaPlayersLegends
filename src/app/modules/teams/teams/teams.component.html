@@ -2,7 +2,7 @@
   <h3 class="titleName">{{player.name}} {{player.lastName}}</h3>
   <div class="row">
 
-      <div *ngIf="player?.teams" class="dataCol">
+      <div *ngIf="player.teams" class="dataCol">
         <div *ngFor="let team of player.teams | slice:0:4" class="dataCol team-card">
           <app-card-team [team]="team"></app-card-team>
         </div>
