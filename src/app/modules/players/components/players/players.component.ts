@@ -13,6 +13,8 @@ import { PlayerService } from '../../../../services/player.service';
 export class PlayersComponent implements OnInit {
 
   player: IPlayer | undefined;
+  errorMessage: string | undefined;
+
   private route = inject(ActivatedRoute);
   private router = inject(Router);
   private playerService = inject(PlayerService);
@@ -22,10 +24,10 @@ export class PlayersComponent implements OnInit {
     this.playerService.getPlayerById(id).subscribe({
       next: player => {
         this.player = player;
-        console.log(this.player);
       },
       error: err => {
         console.error('Error fetching player:', err);
+        this.errorMessage = 'Error fetching player: ' + err.message;
       }
     });
   }
@@ -33,7 +35,7 @@ export class PlayersComponent implements OnInit {
   getSemicircleBackground(value: string): string {
     const parsedValue = parseInt(value, 10);
     const color = parsedValue >= 70 ? '#4CAF50' : parsedValue >= 50 ? '#FFC107' : '#F44336';
-    const length = parsedValue * 0.5; // Longitud del arco del semicírculo en porcentaje
+    const length = parsedValue * 0.5;
     return `linear-gradient(90deg, ${color} 50%, transparent 50%, transparent ${length}%, #f0f0f0 ${length}%)`;
   }
 

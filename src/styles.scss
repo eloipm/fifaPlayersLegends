@@ -16,3 +16,50 @@ $_black:#232222;
 a{
     all: unset;
 }
+
+.container_btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: auto;
+
+  .btn_gold {
+    background-color: $old_gold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: $olive;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: translateY(-2px);
+      cursor: pointer;
+    }
+
+    &:active {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transform: translateY(1px);
+    }
+  }
+}
+
+.card {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+
+  .img-card {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    padding-top: 10%;
+
+    &::shadow{
+      border-radius: 4px;
+    }
+  }
+}
