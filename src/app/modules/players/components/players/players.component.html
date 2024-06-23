@@ -1,118 +1,56 @@
-
-
-
-<div class="container" *ngIf="player; else errorTemplate">
-  <div class="row">
-    <div class="dataCol">
-      <div class="card">
-        <img src="{{player.cardImage}}" alt="{{player.name}} {{player.lastName}} Image" class="card-img">
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="dataCol">
+        <div class="card">
+          <img src="{{player?.cardImage}}" alt="{{player?.name}} {{player?.lastName}} Image" class="card-img">
+        </div>
+      </div>
+      <div class="dataCol">
+        <div class="statistics-grid">
+          <div class="arc-container">
+            <div class="arc">
+              <div class="number">{{player?.pace}}</div>
+            </div>
+            <div class="label">{{"stat1" | translate}}</div>
+          </div>
+          <div class="arc-container">
+            <div class="arc">
+              <div class="number">{{player?.shooting}}</div>
+            </div>
+            <div class="label">{{"stat2" | translate}}</div>
+          </div>
+          <div class="arc-container">
+            <div class="arc">
+              <div class="number">{{player?.passing}}</div>
+            </div>
+            <div class="label">{{"stat3" | translate}}</div>
+          </div>
+          <div class="arc-container">
+            <div class="arc">
+              <div class="number">{{player?.dribbling}}</div>
+            </div>
+            <div class="label">{{"stat4" | translate}}</div>
+          </div>
+          <div class="arc-container">
+            <div class="arc">
+              <div class="number">{{player?.defending}}</div>
+            </div>
+            <div class="label">{{"stat5" | translate}}</div>
+          </div>
+          <div class="arc-container">
+            <div class="arc">
+              <div class="number">{{player?.physical}}</div>
+            </div>
+            <div class="label">{{"stat6" | translate}}</div>
+          </div>
+          <!-- Add more statistics as needed -->
+        </div>
       </div>
     </div>
-    <div class="dataCol">
-      <div class="statistics-grid">
-        <div class="arc-container">
-          <div class="arc">
-            <div class="number">{{player?.pace}}</div>
-          </div>
-          <div class="label">{{"stat1" | translate}}</div>
-        </div>
-        <div class="arc-container">
-          <div class="arc">
-            <div class="number">{{player?.shooting}}</div>
-          </div>
-          <div class="label">{{"stat2" | translate}}</div>
-        </div>
-        <div class="arc-container">
-          <div class="arc">
-            <div class="number">{{player?.passing}}</div>
-          </div>
-          <div class="label">{{"stat3" | translate}}</div>
-        </div>
-        <div class="arc-container">
-          <div class="arc">
-            <div class="number">{{player?.dribbling}}</div>
-          </div>
-          <div class="label">{{"stat4" | translate}}</div>
-        </div>
-        <div class="arc-container">
-          <div class="arc">
-            <div class="number">{{player?.defending}}</div>
-          </div>
-          <div class="label">{{"stat5" | translate}}</div>
-        </div>
-        <div class="arc-container">
-          <div class="arc">
-            <div class="number">{{player?.physical}}</div>
-          </div>
-          <div class="label">{{"stat6" | translate}}</div>
-        </div>
-        <!-- Add more statistics as needed -->
-      </div>
-    </div>
-  </div>
 
-  <div class="container_btn">
-    <div class="btn" (click)="goToVideos(player!.pId)">Videos</div>
-  </div>
-</div>
-<div class="statistics-grid">
-  <!-- <div class="statistic-container">
-    <div class="statistic">Pace</div>
-    <div class="player-stats-half-circle" [style.background-image]="getSemicircleBackground(player!.pace)">
-      <div class="player-stats-half-circle-value">{{ player?.pace }}%</div>
-    </div>
-  </div>
-  <div class="statistic-container">
-    <div class="statistic-label">Shooting</div>
-    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.shooting)">
-      <div class="player-stats-half-circle-value">{{ player?.shooting }}%</div>
-    </div>
-  </div>
-  <div class="statistic-container">
-    <div class="statistic-label">Passing</div>
-    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.passing)">
-      <div class="player-stats-half-circle-value">{{ player?.passing }}%</div>
-    </div>
-  </div>
-  <div class="statistic-container">
-    <div class="statistic-label">Dribbling</div>
-    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.dribbling)">
-      <div class="player-stats-half-circle-value">{{ player?.dribbling }}%</div>
-    </div>
-  </div>
-  <div class="statistic-container">
-    <div class="statistic-label">Defending</div>
-    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.defending)">
-      <div class="player-stats-half-circle-value">{{ player?.defending }}%</div>
-    </div>
-  </div>
-  <div class="statistic-container">
-    <div class="statistic-label">Physical</div>
-    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.physical)">
-      <div class="player-stats-half-circle-value">{{ player?.physical }}%</div>
-    </div>
-  </div> -->
-</div>
-
-  <div class="container_btn">
-    <div class="btn_gold" (click)="goToVideos(player!.pId)">Videos</div>
-  </div>
-  <div class="statistic-container">
-    <div class="statistic-label">Physical</div>
-    <div class="player-stats-half-circle dark-green" [style.background-image]="getSemicircleBackground(player!.physical)">
-      <div class="player-stats-half-circle-value">{{ player?.physical }}%</div>
-    </div>
-  </div> -->
-</div>
-
-<!-- Template alternativo para mostrar el error -->
-<ng-template #errorTemplate>
-  <div *ngIf="errorMessage" class="error">
-    <p>{{ errorMessage }}</p>
     <div class="container_btn">
-      <button class="btn_gold">
-        <a routerLink="/home">{{'back'| translate}}</a>
-        </button>
+      <div class="btn_gold" (click)="goToVideos(player!.pId)">Videos</div>
     </div>
   </div>
-</ng-template>
+</main>
