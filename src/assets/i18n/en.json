@@ -8,5 +8,6 @@
     "stat3": "PASSING",
     "stat4": "DRIBBLING",
     "stat5": "DEFENDING",
-    "stat6": "PHYSICAL"
+    "stat6": "PHYSICAL",
+    "teams": "Teams"
 }

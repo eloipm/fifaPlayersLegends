@@ -1,18 +1,20 @@
 <div class="container">
+  <h3 class="titleName">{{player.name}} {{player.lastName}}</h3>
   <div class="row">
-    <div class="imageCol">
-      <div class="card">
-        <img src="{{ player.playerImage }}" alt="{{player.name}} {{player.lastName}}" class="img-card">
-      </div>
-    </div>
-    <div class="teamsCol">
 
-      <div *ngIf="player?.teams" class="dataCol">
-        <div *ngFor="let team of player.teams" class=" dataCol team-card">
-          <p>{{player.teams[0]}}</p>
+      <div *ngIf="player.teams" class="dataCol">
+        <div *ngFor="let team of player.teams | slice:0:4" class="dataCol team-card">
+          <app-card-team [team]="team"></app-card-team>
         </div>
       </div>
-    </div>
 
+
+  </div>
+  <div class="container_btn">
+    <button class="btn_gold" >
+      <a routerLink="/" class="">
+        {{'back' | translate }}
+      </a>
+    </button>
   </div>
 </div>
