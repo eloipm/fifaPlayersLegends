@@ -1,6 +1,7 @@
-<div class="container">
-  <h3 class="titleName">{{player.name}} {{player.lastName}}</h3>
-  <div class="row">
+<main>
+  <div class="container">
+    <h3 class="titleName">{{player.name}} {{player.lastName}}</h3>
+    <div class="row">
 
       <div *ngIf="player.teams" class="dataCol">
         <div *ngFor="let team of player.teams | slice:0:4" class="dataCol team-card">
@@ -9,12 +10,13 @@
       </div>
 
 
+    </div>
+    <div class="container_btn">
+      <button class="btn_gold">
+        <a routerLink="/" class="">
+          {{'back' | translate }}
+        </a>
+      </button>
+    </div>
   </div>
-  <div class="container_btn">
-    <button class="btn_gold" >
-      <a routerLink="/" class="">
-        {{'back' | translate }}
-      </a>
-    </button>
-  </div>
-</div>
+</main>
