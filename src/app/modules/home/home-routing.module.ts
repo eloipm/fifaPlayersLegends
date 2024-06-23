@@ -62,48 +62,6 @@ const routes: Routes = [
   }
 ]
 
-
-// [{
-//   path: 'home',
-//   component: HomeComponent,
-//   data: {
-//     breadcrumb: 'Home'
-//   },
-//   children: [
-//     {
-//       path: '',
-//       data: {
-//         breadcrumb: null
-//       },
-//       component: HomeComponent,
-//     },
-//     {
-//       path: 'players',
-//       loadChildren: () =>
-//         import('../players/players.module').then((file) => file.PlayersModule),
-//       data: {
-//         breadcrumb: 'Players'
-//       }
-//     },
-//     // {
-//     //   path: 'videos',
-//     //   loadChildren: () =>
-//     //     import('../videos/videos.module').then((file) => file.VideosModule),
-//     // },
-//     // {
-//     //   path: 'teams',
-//     //   loadChildren: () =>
-//     //     import('../teams/teams.module').then((file) => file.TeamsModule),
-//     // },
-//     // {
-//     //   path: '',
-//     //   redirectTo: 'home',
-//     //   pathMatch: 'full',
-
-//     // },
-//   ],
-// },];
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]

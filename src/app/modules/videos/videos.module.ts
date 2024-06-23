@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { VideosRoutingModule } from './videos-routing.module';
+// import { VideosRoutingModule } from './videos-routing.module';
 import { VideosComponent } from './videos/videos.component';
 import { RouterModule } from '@angular/router';
 
@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    VideosRoutingModule,
+    // VideosRoutingModule,
     RouterModule
   ],
   exports: [

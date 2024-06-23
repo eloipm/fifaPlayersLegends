@@ -1,0 +1,27 @@
+@import "../../../styles.scss";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 100%;
+
+
+    & h1{
+        font-size: 3rem;
+        font-weight: 700;
+        color: $old_gold;
+    }
+    & h2{
+        font-size: 2rem;
+        color: $old_gold;
+    }
+}
+.img_404{
+  border-radius: 100%;
+  height: 330px;
+  width: 330px;
+}
+

@@ -8,8 +8,8 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule) },
 
-  // { path: 'error', component: ErrorPageComponent },
-  // { path: '**', redirectTo: '/error' },
+  { path: 'error', component: ErrorPageComponent },
+  { path: '**', redirectTo: '/error' },
 ];
 
 @NgModule({

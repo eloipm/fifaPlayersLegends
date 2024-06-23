@@ -3,7 +3,7 @@
 
     <div class="imageCol">
       <div class="card">
-        <img src="{{ player.playerImage }}" alt="{{player.name}} {{player.lastName}}">
+        <img src="{{ player.playerImage }}" alt="{{player.name}} {{player.lastName}}" class="img-card">
       </div>
     </div>
 
@@ -17,6 +17,6 @@
   </div>
 
   <div class="container_btn">
-    <div class="btn" (click)="goToTeams(player!.pId)">Teams</div>
+    <div class="btn_gold" (click)="goToTeams(player!.pId)">Teams</div>
   </div>
 </div>
