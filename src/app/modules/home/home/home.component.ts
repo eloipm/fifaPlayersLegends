@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { IPlayerService } from '../../../services/player.service.interface';
 import { PlayerService } from '../../../services/player.service';
 import { IPlayer } from '../../../models/player.model';
@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
   ]
 })
 
-export class HomeComponent {
+export class HomeComponent implements OnInit{
 
   players: IPlayer[] = [];
 
