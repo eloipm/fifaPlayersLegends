@@ -20,7 +20,7 @@ a{
 .container_btn {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   padding: auto;
 
   .btn_gold {
@@ -54,8 +54,8 @@ a{
 
   .img-card {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
+    height: 50%;
+    border-radius: 15px;
     padding-top: 10%;
 
     &::shadow{

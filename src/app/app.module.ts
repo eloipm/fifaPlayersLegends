@@ -10,12 +10,17 @@ import { TranslateModule } from '@ngx-translate/core';
 import { provideTranslation } from './core/config/i18n/translate-loader.config';
 import { VideosModule } from './modules/videos/videos.module';
 import { PlayersComponent } from './modules/players/components/players/players.component';
+import { TeamsComponent } from './modules/teams/teams/teams.component';
+
+import { CardTeamComponent } from './modules/teams/card-team/card-team.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlayersComponent
+    PlayersComponent,
+    TeamsComponent,
+    CardTeamComponent
   ],
   imports: [
     BrowserModule,
