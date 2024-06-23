@@ -49,7 +49,7 @@ main {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            font-size: 18px;
+            font-size: 1.4rem;
             color: black;
             font-weight: bold;
             text-shadow: 1px 1px 3px white;
@@ -71,34 +71,6 @@ main {
         padding: 10px;
         border: 1px solid #ccc;
         text-align: center;
-      }
-    }
-  }
-
-  .container_btn {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-    padding: auto;
-  
-    .btn_gold {
-      background-color: $old_gold;
-      padding: 5px 10px;
-      border-radius: 5px;
-      border: none;
-      text-align: center;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-  
-      &:hover {
-        background-color: $olive;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transform: translateY(-2px);
-        cursor: pointer;
-      }
-  
-      &:active {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        transform: translateY(1px);
       }
     }
   }
