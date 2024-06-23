@@ -10,24 +10,11 @@
     align-items: flex-start;
 
     .imageCol {
-      width: 40%; // Columna para la imagen en desktop
+      width: 40%;
       max-width: 40%;
       height: auto;
 
-      .card {
-        max-width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        border-radius: 20px;
 
-        img {
-          width: 100%;
-          height: auto;
-          border-radius: 4px;
-          padding-top: 10%;
-        }
-      }
     }
 
     .videosCol {
@@ -50,26 +37,6 @@
     }
   }
 
-  .container_btn {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-    padding: auto;
-
-    .btn {
-      background-color: $old_gold;
-      padding: 5px 10px;
-      border-radius: 5px;
-      border: none;
-      text-align: center;
-      transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: $olive;
-        cursor: pointer;
-      }
-    }
-  }
 
   @media (max-width: 768px) {
     .row {
