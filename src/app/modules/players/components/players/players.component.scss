@@ -45,9 +45,6 @@
   }
 
 
-
-
-
   @media (min-width: 768px) {
     .row {
       display: flex;
@@ -59,7 +56,7 @@
       }
 
       .statistics-grid {
-        grid-template-columns: repeat(2, 1fr); // Cambia a 2 columnas en pantallas medianas y grandes
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   }
