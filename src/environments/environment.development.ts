@@ -1,4 +1,4 @@
 export const environment = {
-  production: true,
+  production: false,
   imageUrl: '../assets/images/dev.png'
 };
