@@ -1,16 +1,12 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { IPlayerService } from '../../../services/player.service.interface';
-import { PlayerService } from '../../../services/player.service';
 import { IPlayer } from '../../../models/player.model';
 import { Router } from '@angular/router';
 import { EncryptionService } from '../../../services/encryption.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
-  providers: [
-    { provide: IPlayerService, useClass: PlayerService }
-  ]
+  styleUrl: './home.component.scss'
 })
 
 export class HomeComponent implements OnInit{

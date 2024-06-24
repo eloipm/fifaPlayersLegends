@@ -1,50 +1,49 @@
 <main>
-  <div class="container">
+  <div class="container" *ngIf="player; else errorTemplate">
     <div class="row">
       <div class="dataCol">
         <div class="card">
-          <img src="{{player?.cardImage}}" alt="{{player?.name}} {{player?.lastName}} Image" class="card-img">
+          <img src="{{player.cardImage}}" alt="{{player.name}} {{player.lastName}} Image" class="card-img">
         </div>
       </div>
       <div class="dataCol">
         <div class="statistics-grid">
           <div class="arc-container">
             <div class="arc">
-              <div class="number">{{player?.pace}}</div>
+              <div class="number">{{player.pace}}</div>
             </div>
             <div class="label">{{"stat1" | translate}}</div>
           </div>
           <div class="arc-container">
             <div class="arc">
-              <div class="number">{{player?.shooting}}</div>
+              <div class="number">{{player.shooting}}</div>
             </div>
             <div class="label">{{"stat2" | translate}}</div>
           </div>
           <div class="arc-container">
             <div class="arc">
-              <div class="number">{{player?.passing}}</div>
+              <div class="number">{{player.passing}}</div>
             </div>
             <div class="label">{{"stat3" | translate}}</div>
           </div>
           <div class="arc-container">
             <div class="arc">
-              <div class="number">{{player?.dribbling}}</div>
+              <div class="number">{{player.dribbling}}</div>
             </div>
             <div class="label">{{"stat4" | translate}}</div>
           </div>
           <div class="arc-container">
             <div class="arc">
-              <div class="number">{{player?.defending}}</div>
+              <div class="number">{{player.defending}}</div>
             </div>
             <div class="label">{{"stat5" | translate}}</div>
           </div>
           <div class="arc-container">
             <div class="arc">
-              <div class="number">{{player?.physical}}</div>
+              <div class="number">{{player.physical}}</div>
             </div>
             <div class="label">{{"stat6" | translate}}</div>
           </div>
-          <!-- Add more statistics as needed -->
         </div>
       </div>
     </div>
@@ -54,3 +53,14 @@
     </div>
   </div>
 </main>
+
+<ng-template #errorTemplate>
+  <div *ngIf="errorMessage" class="error">
+    <p>{{ errorMessage }}</p>
+    <div class="container_btn">
+      <button class="btn_gold">
+        <a routerLink="/home">{{'back'| translate}}</a>
+        </button>
+    </div>
+  </div>
+</ng-template>

@@ -26,7 +26,6 @@ export class PlayersComponent implements OnInit {
         this.player = player;
       },
       error: err => {
-        console.error('Error fetching player:', err);
         this.errorMessage = 'Error fetching player: ' + err.message;
       }
     });
