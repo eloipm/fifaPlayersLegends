@@ -3,7 +3,7 @@ import { IPlayerService } from '../../../services/player.service.interface';
 import { PlayerService } from '../../../services/player.service';
 import { IPlayer } from '../../../models/player.model';
 import { Router } from '@angular/router';
-
+import { EncryptionService } from '../../../services/encryption.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -19,7 +19,9 @@ export class HomeComponent implements OnInit{
 
   private playerService= inject(IPlayerService);
   private router = inject(Router);
+  private encryptionService = inject(EncryptionService);
 
+  //decripted = this.encryptionService.decrypt(environment.DATA_PLAYERS)
 
   ngOnInit() {
     this.playerService.getPlayers().subscribe(players => {
@@ -31,5 +33,4 @@ export class HomeComponent implements OnInit{
   viewDetails(id: number): void {
     this.router.navigate(['home/players', id]);
   }
-
 }

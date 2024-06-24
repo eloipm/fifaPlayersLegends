@@ -6,15 +6,15 @@ import * as CryptoJS from 'crypto-js';
 })
 export class EncryptionService {
 
-  private key = 'KEYmeliEloi'; 
+  key = "encrypt!meliEloi";
 
   public encrypt(password: string): string {
     return CryptoJS.AES.encrypt(password, this.key).toString();
   }
 
-  public decrypt(passwordToDecrypt: string): string {
-    const bytes = CryptoJS.AES.decrypt(passwordToDecrypt, this.key);
-    return bytes.toString(CryptoJS.enc.Utf8);
-  }
+  decrypt = (encryptedData: string, ) => {
+      return CryptoJS.AES.decrypt(encryptedData, this.key).toString(CryptoJS.enc.Utf8);
+    };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   
 }
