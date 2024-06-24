@@ -1,0 +1,40 @@
+@import '../../../../styles.scss';
+
+nav {
+  font-size: 16px;
+  padding: 10px 0;
+  background-color: $papaya;
+  font-style: italic;
+}
+
+ol.breadcrumb {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+
+
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    a {
+      text-decoration: none;
+      color: $e-black;
+      transition: color 0.3s;
+
+      &:hover {
+        color:$olive;
+        cursor: pointer;
+      }
+    }
+
+    &:last-child {
+      a {
+        pointer-events: none;
+        color: #6c757d;
+      }
+    }
+  }
+}

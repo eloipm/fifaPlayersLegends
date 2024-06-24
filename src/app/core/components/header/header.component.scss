@@ -1,0 +1,92 @@
+@import '../../../../styles.scss';
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $old_gold;
+    padding: 15px;
+    user-select: none;
+    height: 3rem;
+}
+
+.logoImg {
+    width: 7rem;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+
+    color: $olive;
+    text-shadow: 1px 1px 3px black;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+button {
+    background: none;
+    border: none;
+    color: $old_gold;
+    margin: 3px;
+}
+
+.languageFlag {
+    border-radius: 22px;
+    width: 3rem;
+
+    &:hover {
+        cursor: pointer;
+        width: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 4rem;
+        padding: 10px;
+    }
+
+    .logoImg {
+        width: 6rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    .languageFlag {
+        width: 3rem;
+
+        &:hover {
+            width: 3.1rem;
+        }
+    }
+}
+
+@media (max-width: 552px) {
+    header {
+        height: 4rem;
+        padding: 10px;
+    }
+
+    .logoImg {
+        width: 4.5rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .languageFlag {
+        width: 2.2rem;
+
+        &:hover {
+            width: 2.4rem;
+        }
+    }
+}

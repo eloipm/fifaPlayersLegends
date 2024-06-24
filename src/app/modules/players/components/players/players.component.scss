@@ -1,0 +1,107 @@
+@import '../../../../../styles.scss';
+main {
+  background-color: $papaya;
+  padding: 20px;
+  min-height: 78.2vh;
+}
+
+.container {
+  background-color: $papaya;
+
+  .row {
+    display: block;
+
+    .card {
+      max-width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 50%;
+        height: auto;
+      }
+    }
+
+    .statistics-grid {
+      margin: 4rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 2rem;
+
+      .arc-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .arc {
+          position: relative;
+          width: 90px;
+          height: 50px;
+          border-top-left-radius: 80px;
+          border-top-right-radius: 80px;
+          background: linear-gradient(to bottom, $old_gold, $olive);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .number {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            color: black;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px white;
+          }
+        }
+
+        .label {
+          margin-top: 5px;
+          font-size: 1.1rem;
+          text-align: center;
+
+          color: $olive;
+          font-weight: bold;
+          text-shadow: 1px 1px 2px $old_gold;
+        }
+      }
+
+      .statistic {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .dataCol {
+        width: 48%;
+      }
+
+      .statistics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+.error {
+  background-color: $papaya;
+  color: #9d3333;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  height: 70vh;
+  padding-top: 5%;
+
+  p{
+    padding-bottom: 5%;}
+
+}

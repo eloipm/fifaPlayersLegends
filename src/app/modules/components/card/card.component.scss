@@ -1,0 +1,30 @@
+.card {
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .card__image-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card__image {
+    width: 250px;
+    height: 400px;
+    max-height: 70vh;
+    //object-fit: cover; // Asegura que la imagen cubra todo el contenedor sin distorsionarse
+    transition: filter 0.3s ease;
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+}
