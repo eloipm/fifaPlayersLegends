@@ -9,17 +9,15 @@ import { HomeModule } from './modules/home/home.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { provideTranslation } from './core/config/i18n/translate-loader.config';
 import { VideosModule } from './modules/videos/videos.module';
-import { PlayersComponent } from './modules/players/components/players/players.component';
 import { IPlayerService } from './services/player.service.interface';
 import { PlayerService } from './services/player.service';
 import { TeamsModule } from './modules/teams/teams.module';
+import { PlayersModule } from './modules/players/players.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlayersComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -27,6 +25,7 @@ import { TeamsModule } from './modules/teams/teams.module';
     CoreModule,
     HttpClientModule,
     HomeModule,
+    PlayersModule,
     VideosModule,
     TeamsModule,
     TranslateModule.forRoot(provideTranslation())
