@@ -3,6 +3,8 @@ import { IPlayerService } from '../../../services/player.service.interface';
 import { IPlayer } from '../../../models/player.model';
 import { Router } from '@angular/router';
 import { EncryptionService } from '../../../services/encryption.service';
+import { environment } from '../../../../environments/environment';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -17,12 +19,11 @@ export class HomeComponent implements OnInit{
   private router = inject(Router);
   private encryptionService = inject(EncryptionService);
 
-  //decripted = this.encryptionService.decrypt(environment.DATA_PLAYERS)
+  decripted = this.encryptionService.decrypt(environment.DATA_PLAYERS);
 
   ngOnInit() {
     this.playerService.getPlayers().subscribe(players => {
       this.players = players;
-      console.log(this.players);
     });
   }
 

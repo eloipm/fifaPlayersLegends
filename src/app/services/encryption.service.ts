@@ -12,7 +12,7 @@ export class EncryptionService {
     return CryptoJS.AES.encrypt(password, this.key).toString();
   }
 
-  decrypt = (encryptedData: string, ) => {
+   public decrypt = (encryptedData: string, ) => {
       return CryptoJS.AES.decrypt(encryptedData, this.key).toString(CryptoJS.enc.Utf8);
     };
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
