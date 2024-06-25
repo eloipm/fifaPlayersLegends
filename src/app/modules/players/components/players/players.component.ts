@@ -2,6 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { IPlayer } from '../../../../models/player.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IPlayerService } from '../../../../services/player.service.interface';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-players',
@@ -18,6 +19,7 @@ export class PlayersComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private router = inject(Router);
   private playerService = inject(IPlayerService);
+  private translate = inject(TranslateService);
 
   ngOnInit(): void {
     const id = +this.route.snapshot.paramMap.get('id')!;
@@ -26,7 +28,9 @@ export class PlayersComponent implements OnInit {
         this.player = player;
       },
       error: err => {
-        this.errorMessage = 'Error fetching player: ' + err.message;
+        this.translate.get('ERRORS.FETCH_PLAYER', { error: err.message }).subscribe(translatedMessage => {
+          this.errorMessage = translatedMessage;
+        });
       }
     });
   }

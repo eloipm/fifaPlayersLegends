@@ -1,13 +1,21 @@
 {
-    "footer":"Made with love by Eloi & Meli",
-    "titleHeader":"FIFA PLAYERS LEGENDS",
-    "button": "Got to videos",
-    "back": "Back to main page",
-    "stat1": "PACE",
-    "stat2": "SHOOTING",
-    "stat3": "PASSING",
-    "stat4": "DRIBBLING",
-    "stat5": "DEFENDING",
-    "stat6": "PHYSICAL",
-    "teams": "Teams"
+  "footer": "Made with love by Eloi & Meli",
+  "titleHeader": "FIFA PLAYERS LEGENDS",
+  "button": "Got to videos",
+  "back": "Back to main page",
+  "stat1": "PACE",
+  "stat2": "SHOOTING",
+  "stat3": "PASSING",
+  "stat4": "DRIBBLING",
+  "stat5": "DEFENDING",
+  "stat6": "PHYSICAL",
+  "teams": "Teams",
+  "ERROR_PAGE": {
+    "TITLE": "Oops!",
+    "SUBTITLE": "Looks like you're lost!",
+    "MESSAGE": "We couldn't find the page you're looking for."
+  },
+  "ERRORS": {
+    "FETCH_PLAYER": "Error fetching player: {{error}}"
+  }
 }
