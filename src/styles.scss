@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
 
-$papaya:#FBF7EE;
+$papaya:#ebe6db;
 $old_gold:#DDC23A;
 $olive:#84731F;
 $e-black:#1D1C1C;
@@ -62,4 +62,46 @@ a{
       border-radius: 4px;
     }
   }
+}
+
+
+// Definir variables para los temas
+$light-mode-colors: (
+  header-bg-color: $old_gold,
+  header-text-color:$olive,
+  footer-bg-color: $old_gold,
+  footer-text-color:$e-black,
+  main-bg-color: $papaya
+);
+
+$dark-mode-colors: (
+  header-bg-color: $e-black,
+  header-text-color:$old_gold,
+  footer-bg-color: $e-black,
+  footer-text-color:$old_gold,
+  main-bg-color: $_black
+);
+
+@mixin theme($colors) {
+  header {
+    background-color: map-get($colors, header-bg-color);
+    color: map-get($colors, header-text-color);
+  }
+  footer {
+    background-color: map-get($colors, footer-bg-color);
+    color: map-get($colors, footer-text-color);
+  }
+  main {
+    background-color: map-get($colors, main-bg-color);
+    color: map-get($colors, text-color);
+  }
+}
+
+// Aplicar temas
+body.light-mode {
+  @include theme($light-mode-colors);
+}
+
+body.dark-mode {
+  @include theme($dark-mode-colors);
 }

@@ -6,7 +6,6 @@ main {
 }
 
 .container {
-  background-color: $papaya;
 
   .row {
     display: block;
@@ -61,9 +60,9 @@ main {
           font-size: 1.1rem;
           text-align: center;
 
-          color: $olive;
+          color:  $old_gold;
           font-weight: bold;
-          text-shadow: 1px 1px 2px $old_gold;
+          text-shadow: 1px 1px 2px $olive;
         }
       }
 

@@ -1,16 +1,15 @@
 @import '../../../../styles.scss';
 
- main{
-   background-color: $papaya;
-   min-height: 78.2vh;
-   padding: 20px;
-
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
-.container {
+main {
+  min-height: 78.2vh;
+  padding: 20px;
   background-color: $papaya;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
   padding: 1rem;
   height: 100%;
 
@@ -20,10 +19,9 @@
     align-items: center;
     margin: 1rem;
     font-size: 2rem;
-    color: $olive;
-    text-shadow: 2px 2px 4px rgba(230, 208, 17, 0.745);
+    color: $old_gold;
+    text-shadow: 1px 1px 3px $olive;
   }
-
   .dataCol {
     display: flex;
     flex-direction: row;
@@ -43,6 +41,7 @@
       flex-wrap: wrap;
     }
   }
+
   @media (max-width: 768px) {
     .dataCol {
       flex-direction: column;

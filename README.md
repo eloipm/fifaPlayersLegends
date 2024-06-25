@@ -1,27 +1,102 @@
-# FifaPlayersLegends
+# FIFA Players Legends App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+Welcome to the **FIFA Players Legends** app! This app showcases legendary FIFA players with detailed information.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Mockup](#mockup)
+- [Autors](#autors)
+- [Contributing](#contributing)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js (version 18 or later)
+- Angular CLI (version 17 or later)
 
-## Running unit tests
+### Steps
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/eloipm/fifaPlayersLegends.git
+    cd fifaPlayersLegends
+    ```
 
-## Running end-to-end tests
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Run the development server:
+    ```bash
+    ng serve
+    ```
 
-## Further help
+4. Open your browser and navigate to `http://localhost:4200/`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Usage
+
+- Select through the list of legendary players.
+- ![image](https://github.com/eloipm/fifaPlayersLegends/assets/102113745/0f4704be-5a5f-4e46-8ce0-f12bcb5c29d8)
+
+- Click on a player to view detailed information.
+- ![image](https://github.com/eloipm/fifaPlayersLegends/assets/102113745/23f48b83-a5ae-4685-99ba-37cd92937566)
+
+
+- Click on the videos to access the player's career.
+- ![image](https://github.com/eloipm/fifaPlayersLegends/assets/102113745/320830b2-b5f9-496f-97a6-8a4fae9f6e73)
+
+- Click on the Teams to access the player's career.
+![image](https://github.com/eloipm/fifaPlayersLegends/assets/102113745/fd6d3a28-e0c6-4dce-ad73-783d2a692d46)
+
+- Select differents language.
+- ![image](https://github.com/eloipm/fifaPlayersLegends/assets/102113745/b2c79777-7287-42cb-80a9-0fa4804a5f15)
+- We have 'Dark Mood' and multi-language implemented.
+- ![image](https://github.com/eloipm/fifaPlayersLegends/assets/102113745/e8f3b7be-f712-4f44-8352-cf9cfe4b8146)
+
+
+## Features
+
+- **Player List**: View a list of all legendary players.
+- **Player Details**: Click on a player to see detailed statistics and information.
+- **Player Videos**: Look videos about carrer to players.
+- **Player Teams**: Look historial.
+- **Responsive Design**: Works on both desktop and mobile devices.
+- **Dark Mode**: button on dark mode.
+
+## Technologies
+
+- **Angular CLI** version 17.3.8
+- **typescript** version 5.4.2
+- **eslint** version 8.57.0
+- **Sanitizer**
+
+## Mockup
+[Figma MockUp]([https://github.com/eloipm/fifaPlayersLegends](https://www.figma.com/design/ciigGSzr37m4uwO7xEglAD/fifaPlayersLegends?node-id=0-1&t=bY96abginjfLdfeV-1))
+
+
+## Autors
+
+- **Eloi Pellin** [Linkedin](https://www.linkedin.com/in/eloi-pellin-593754258/)
+- **Melissa Casola** [Linkedin](https://www.linkedin.com/in/melissa-casola/)
+
+
+## Contributing
+
+We welcome contributions! Follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Open a pull request.
+
+---
+
+Thank you for using the **FIFA Players Legends** app! If you have any questions or feedback, please open an issue on the [GitHub repository](https://github.com/eloipm/fifaPlayersLegends).
