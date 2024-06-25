@@ -3,6 +3,8 @@ import { IPlayerService } from './player.service.interface';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
 import { IPlayer } from '../models/player.model';
+import { environment } from '../../environments/environment';
+import { EncryptionService } from './encryption.service';
 
 
 @Injectable({
@@ -11,9 +13,14 @@ import { IPlayer } from '../models/player.model';
 
 export class PlayerService implements IPlayerService {
 
-  private playersUrl = 'assets/data/players.json';
+  private playersUrl:string;
   private http = inject(HttpClient);
+  private decrypt= inject(EncryptionService);
 
+  constructor(){
+    this.playersUrl=this.decrypt.decrypt(environment.DATA_PLAYERS);
+  }
+  
   getPlayers(): Observable<IPlayer[]> {
     return this.http.get<{playersLegends: IPlayer[] }>(this.playersUrl).pipe(map(players => players.playersLegends));
   }
