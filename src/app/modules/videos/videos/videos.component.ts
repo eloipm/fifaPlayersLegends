@@ -31,8 +31,6 @@ export class VideosComponent implements OnInit {
 
   goToTeams(): void {
     this.navigationUtils.goToTeams(this.routeActive);
-    console.log('Navigating to teams');
-
   }
 
 }
