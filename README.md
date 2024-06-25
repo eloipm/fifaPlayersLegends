@@ -76,9 +76,12 @@ Welcome to the **FIFA Players Legends** app! This app showcases legendary FIFA p
 - **typescript** version 5.4.2
 - **eslint** version 8.57.0
 - **Sanitizer**
+  
 
 ## Mockup
-[Figma MockUp]([https://github.com/eloipm/fifaPlayersLegends](https://www.figma.com/design/ciigGSzr37m4uwO7xEglAD/fifaPlayersLegends?node-id=0-1&t=bY96abginjfLdfeV-1))
+
+[Figma MockUp](https://www.figma.com/design/ciigGSzr37m4uwO7xEglAD/fifaPlayersLegends?node-id=0-1&t=IIwyXT5jOuKEBu2l-1)
+![image](https://github.com/eloipm/fifaPlayersLegends/assets/102113745/2566eaf6-8837-4ba4-ab6f-e0f3d0009d43)
 
 
 ## Autors
