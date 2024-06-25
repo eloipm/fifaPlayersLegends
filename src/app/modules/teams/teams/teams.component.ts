@@ -18,7 +18,6 @@ export class TeamsComponent implements OnInit{
     const id = +this.routeActive.snapshot.paramMap.get('id')!;
     this.playerService.getPlayerById(id).subscribe(player => {
       this.player = player;
-      console.log(this.player);
     });
   }
 

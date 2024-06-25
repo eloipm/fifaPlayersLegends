@@ -1,8 +1,9 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { IPlayer } from '../../../../models/player.model';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { IPlayerService } from '../../../../services/player.service.interface';
 import { TranslateService } from '@ngx-translate/core';
+import { NavigationUtilsService } from '../../../../services/navigation-utils.service';
 
 @Component({
   selector: 'app-players',
@@ -17,9 +18,9 @@ export class PlayersComponent implements OnInit {
   errorMessage: string | undefined;
 
   private route = inject(ActivatedRoute);
-  private router = inject(Router);
   private playerService = inject(IPlayerService);
   private translate = inject(TranslateService);
+  private navigationUtils = inject(NavigationUtilsService);
 
   ngOnInit(): void {
     const id = +this.route.snapshot.paramMap.get('id')!;
@@ -35,14 +36,7 @@ export class PlayersComponent implements OnInit {
     });
   }
 
-  getSemicircleBackground(value: string): string {
-    const parsedValue = parseInt(value, 10);
-    const color = parsedValue >= 70 ? '#4CAF50' : parsedValue >= 50 ? '#FFC107' : '#F44336';
-    const length = parsedValue * 0.5;
-    return `linear-gradient(90deg, ${color} 50%, transparent 50%, transparent ${length}%, #f0f0f0 ${length}%)`;
-  }
-
   goToVideos(id: number): void {
-    this.router.navigate(['/home/players/', id, 'videos'])
+    this.navigationUtils.goToVideos(id);
   }
 }

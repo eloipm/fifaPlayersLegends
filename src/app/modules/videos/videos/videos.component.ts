@@ -1,8 +1,9 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { IPlayer } from '../../../models/player.model';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { SafeResourceUrl } from '@angular/platform-browser';
 import { IPlayerService } from '../../../services/player.service.interface';
+import { NavigationUtilsService } from '../../../services/navigation-utils.service';
 
 @Component({
   selector: 'app-videos',
@@ -13,28 +14,25 @@ export class VideosComponent implements OnInit {
 
   player!: IPlayer;
 
-  private route = inject(Router);
   private routeActive = inject(ActivatedRoute);
   private playerService = inject(IPlayerService);
-  private sanitizer = inject(DomSanitizer);
+  private navigationUtils = inject(NavigationUtilsService);
 
   ngOnInit() {
     const id = +this.routeActive.snapshot.paramMap.get('id')!;
     this.playerService.getPlayerById(id).subscribe(player => {
       this.player = player;
-
     });
-
   }
 
   getSafeVideoUrl(link: string): SafeResourceUrl {
-    const videoId = link.split('v=')[1];
-    const embedUrl = `https://www.youtube.com/embed/${videoId}`;
-    return this.sanitizer.bypassSecurityTrustResourceUrl(embedUrl);
+    return this.navigationUtils.getSafeVideoUrl(link);
   }
 
-  goToTeams(id: number): void {
-    this.route.navigate(['teams'], { relativeTo: this.routeActive.parent });
+  goToTeams(): void {
+    this.navigationUtils.goToTeams(this.routeActive);
+    console.log('Navigating to teams');
+
   }
 
 }
