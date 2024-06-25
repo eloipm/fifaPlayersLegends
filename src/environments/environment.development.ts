@@ -1,9 +1,5 @@
-import { EncryptionService } from "../app/services/encryption.service";
-
-const decryptData = new EncryptionService();
-
 export const environment = {
   production: false,
   imageUrl: '../assets/images/dev.png',
-  DATA_PLAYERS: decryptData.encrypt("../assets/data/players.json")
+  DATA_PLAYERS: 'U2FsdGVkX19AHvBusXswCJDnKrkh73/lzZMzcWMoFMHthuNLhD71LvxIljFeuTMp'
 };
