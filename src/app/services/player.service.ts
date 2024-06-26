@@ -20,7 +20,7 @@ export class PlayerService implements IPlayerService {
   constructor(){
     this.playersUrl=this.decrypt.decrypt(environment.DATA_PLAYERS);
   }
-  
+
   getPlayers(): Observable<IPlayer[]> {
     return this.http.get<{playersLegends: IPlayer[] }>(this.playersUrl).pipe(map(players => players.playersLegends));
   }
@@ -30,7 +30,7 @@ export class PlayerService implements IPlayerService {
       map(response => {
         const player = response.playersLegends.find(player => player.pId === id);
         if (!player) {
-          throw new Error(`Player with ID ${id} not found`);
+          throw new Error(`errorMessage`);
         }
         return player;
       })

@@ -49,14 +49,14 @@
     </div>
 
     <div class="container_btn">
-      <div class="btn_gold" (click)="goToVideos(player!.pId)">Videos</div>
+      <div class="btn_gold" (click)="goToVideos(player!.pId)" tabindex="0">Videos</div>
     </div>
   </div>
 </main>
 
 <ng-template #errorTemplate>
   <div *ngIf="errorMessage" class="error">
-    <p>{{ errorMessage }}</p>
+    <p>{{ errorMessage |translate:{id} }}</p>
     <div class="container_btn">
       <button class="btn_gold">
         <a routerLink="/home">{{'back'| translate}}</a>

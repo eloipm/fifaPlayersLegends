@@ -15,7 +15,7 @@
     "SUBTITLE": "Looks like you're lost!",
     "MESSAGE": "We couldn't find the page you're looking for."
   },
-  "ERRORS": {
-    "FETCH_PLAYER": "Error fetching player: {{error}}"
-  }
+
+    "errorMessage": "Error fetching player: {{error}}"
+
 }
