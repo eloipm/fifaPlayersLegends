@@ -1,5 +1,5 @@
-import { Component, inject } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Component, inject, OnInit } from '@angular/core';
+import { Router, NavigationEnd, ActivatedRouteSnapshot } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
 interface Breadcrumb {
@@ -13,7 +13,7 @@ interface Breadcrumb {
   <main>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-      <li>
+        <li>
           <p>🏠</p>
         </li>
         <li class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs">
@@ -23,10 +23,9 @@ interface Breadcrumb {
     </nav>
   </main>
   `,
-  styleUrl: './breadcrumb.component.scss'
+  styleUrls: ['./breadcrumb.component.scss']
 })
-
-export class BreadcrumbComponent {
+export class BreadcrumbComponent implements OnInit {
 
   breadcrumbs: Breadcrumb[] = [];
   private router = inject(Router);
@@ -39,24 +38,25 @@ export class BreadcrumbComponent {
     });
   }
 
-  createBreadcrumbs(route: any, url: string = '', breadcrumbs: Breadcrumb[] = []): Breadcrumb[] {
-    const children: any = route.children;
+  createBreadcrumbs(route: ActivatedRouteSnapshot, url: string = '', breadcrumbs: Breadcrumb[] = []): Breadcrumb[] {
+    const children: ActivatedRouteSnapshot[] = route.children;
 
     if (children.length === 0) {
       return breadcrumbs;
     }
 
     for (const child of children) {
-      const routeURL: string = child.url.map((segment: any) => segment.path).join('/');
+      const routeURL: string = child.url.map(segment => segment.path).join('/');
       if (routeURL !== '') {
         url += `/${routeURL}`;
       }
 
-      breadcrumbs.push({
-        label: child.data.breadcrumb,
-        url: url
-      });
-
+      if (child.data['breadcrumb']) {
+        breadcrumbs.push({
+          label: child.data['breadcrumb'],
+          url: url
+        });
+      }
 
       this.createBreadcrumbs(child, url, breadcrumbs);
     }

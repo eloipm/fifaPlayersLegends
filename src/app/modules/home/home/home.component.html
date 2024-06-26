@@ -1,9 +1,7 @@
-
 <main>
   <div class="grid-container">
-     <!-- eslint-disable-next-line @angular-eslint/template/click-events-have-key-events -->
-    <div *ngFor="let item of players" (click)="viewDetails(item.pId)">
-      <app-card [playerList]="item"></app-card>
+    <div *ngFor="let item of players" (click)="viewDetails(item.pId)" tabindex="0">
+      <app-card [player]="item"></app-card>
     </div>
   </div>
 </main>

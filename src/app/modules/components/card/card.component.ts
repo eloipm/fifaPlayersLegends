@@ -10,10 +10,8 @@ import { IPlayer } from '../../../models/player.model';
       </div>
     </div>
   `,
-  styleUrl: './card.component.scss'
+  styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-
-  @Input('playerList') player!: IPlayer;
-
+  @Input() player!: IPlayer;
 }
